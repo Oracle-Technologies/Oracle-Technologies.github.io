@@ -7,10 +7,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     </head>
 <body>
-<div class="top-bar">
-    <a class="logo">Oracle Technologies</a>
-    <a class="button" href="https://discord.gg/A3PSvvetxj">Join the Discord</a>
-</div>
+<div class="top-bar"></div>
+    <script>
+        fetch('topbar.html')
+        .then(res => res.text())
+        .then(data => document.querySelector('.top-bar').innerHTML = data);
+    </script>
 
 <p>text</p>
 </body>
